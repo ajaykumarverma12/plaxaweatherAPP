@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Col, Container, Row } from "react-bootstrap";
 import {  } from "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "./search-bar.scss";
@@ -18,7 +16,6 @@ class SearchBar extends React.Component {
   }
 
   handleSubmit(event) {
-    // preventing from refreshing the page
     event.preventDefault();
 
     this.props.onFormSubmit();
